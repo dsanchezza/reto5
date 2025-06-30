@@ -1,0 +1,73 @@
+from Shape.point import Point
+from Shape.triangle import Triangle
+from Shape.rectangle import Rectangle
+from Shape.square import Square
+
+punto1 = Point(0, 0)
+punto2 = Point(3, 0)
+punto3 = Point(0, 4)
+
+triangulo = Triangle([punto1, punto2, punto3], is_regular=False)
+
+print("Área del triángulo:", triangulo.compute_area())
+print("Perímetro del triángulo:", triangulo.compute_perimeter())
+print("Ángulos internos del triángulo:", triangulo.compute_inner_angles())
+
+punto4 = Point(0, 0)
+punto5 = Point(4, 0)
+punto6 = Point(4, 2)
+punto7 = Point(0, 2)
+
+rectangulo = Rectangle([punto4, punto5, punto6, punto7], is_regular=False)
+
+print("Rectángulo")
+print("Área:", rectangulo.compute_area())
+print("Perímetro:", rectangulo.compute_perimeter())
+print("Ángulos internos:", rectangulo.compute_inner_angles())
+print()
+
+punto8 = Point(0, 0)
+punto9 = Point(2, 0)
+punto10 = Point(2, 2)
+punto11 = Point(0, 2)
+
+cuadrado = Square([punto8, punto9, punto10, punto11], is_regular=True)
+
+print("Cuadrado")
+print("Área:", cuadrado.compute_area())
+print("Perímetro:", cuadrado.compute_perimeter())
+print("Ángulos internos:", cuadrado.compute_inner_angles())
+
+from Shape.point import Point
+from Shape.triangle import Triangle
+from Shape.rectangle import Rectangle
+from Shape.square import Square
+
+p1 = Point(0, 0)
+p2 = Point(3, 0)
+p3 = Point(0, 4)
+
+tri = Triangle([p1, p2, p3], is_regular=False)
+print("Área del triángulo:", tri.compute_area())
+print("Perímetro del triángulo:", tri.compute_perimeter())
+print("Ángulos internos del triángulo:", tri.compute_inner_angles())
+
+p4 = Point(0, 0)
+p5 = Point(4, 0)
+p6 = Point(4, 2)
+p7 = Point(0, 2)
+
+rect = Rectangle([p4, p5, p6, p7], is_regular=False)
+print("Área del rectángulo:", rect.compute_area())
+print("Perímetro del rectángulo:", rect.compute_perimeter())
+print("Ángulos internos del rectángulo:", rect.compute_inner_angles())
+
+p8 = Point(0, 0)
+p9 = Point(2, 0)
+p10 = Point(2, 2)
+p11 = Point(0, 2)
+
+sqr = Square([p8, p9, p10, p11], is_regular=True)
+print("Área del cuadrado:", sqr.compute_area())
+print("Perímetro del cuadrado:", sqr.compute_perimeter())
+print("Ángulos internos del cuadrado:", sqr.compute_inner_angles())
